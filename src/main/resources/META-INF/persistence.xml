@@ -4,9 +4,13 @@
     <persistence-unit name="sstours-PU" transaction-type="JTA">
         <properties>
             <property name="jakarta.persistence.schema-generation.database.action" value="drop-and-create"/>
-            <property name="jakarta.persistence.schema-generation.create-script-source" value="META-INF/sql/data.sql"/>
+            <property name="jakarta.persistence.sql-load-script-source" value="META-INF/sql/data.sql"/>
+            <!-- Allows to use multi-line SQL scripts -->
+            <property name="hibernate.hbm2ddl.import_files_sql_extractor" value="org.hibernate.tool.schema.internal.script.MultiLineSqlScriptExtractor"/>
+            <!-- Configure SQL traces -->
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.highlight_sql" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

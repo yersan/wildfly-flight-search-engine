@@ -1,4 +1,4 @@
-package org.wildfly.demo.model;
+package org.wildfly.demo.bookings;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +8,8 @@ import jakarta.persistence.Table;
 import jakarta.persistence.Column;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.JoinColumn;
+
+import org.wildfly.demo.flights.Flight;
 
 @Entity
 @Table(name = "BOOKINGS")

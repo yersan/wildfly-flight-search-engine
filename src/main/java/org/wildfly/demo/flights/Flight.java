@@ -1,4 +1,4 @@
-package org.wildfly.demo.model;
+package org.wildfly.demo.flights;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -11,6 +11,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+
+import org.wildfly.demo.cbodies.CelestialBody;
 
 @Entity
 @Table(name = "FLIGHTS")

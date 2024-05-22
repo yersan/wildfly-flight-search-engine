@@ -1,4 +1,4 @@
-package org.wildfly.demo.model;
+package org.wildfly.demo.cbodies;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
